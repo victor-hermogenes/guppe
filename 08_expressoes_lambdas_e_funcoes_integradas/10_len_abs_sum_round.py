@@ -74,5 +74,30 @@ print(round(1.219999999, 2))
 
 # OBS: Pode retornar tanto inteiros quantos reais, depende da casa de aproximação no segundo parâmetro
 """
+# Exemplos Sum
 
+print(sum([1, 2, 3, 4, 5]))
 
+print(sum([1, 2, 3, 4, 5], 5))
+
+print(sum([3.145, 5.678]))
+
+print(sum((1, 2, 3, 4, 5)))
+
+print(sum({1, 2, 3, 4, 5}))
+
+print(sum({'a': 1, 'b': 2, 'c': 3, 'd': 4, 'e': 5}.values()))
+
+# Exemplos Round
+
+print(round(10.2))
+
+print(round(10.5))
+
+print(round(10.6))
+
+print(round(1.2121212121, 2))
+
+print(round(1.219999999, 2))
+
+# OBS: Pode retornar tanto inteiros quantos reais, depende da casa de aproximação no segundo parâmetro
