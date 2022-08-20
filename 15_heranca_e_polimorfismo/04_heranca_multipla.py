@@ -103,3 +103,11 @@ tux = Pinguim('Tux')
 print(tux.andar())
 print(tux.nadar())
 print(tux.cumprimentar())    # Method Resolution Order - MRO
+
+# Objeto é uma instância de ...
+
+print(f'Tux é instância de Pinguim? {isinstance(tux, Pinguim)}')    # True
+print(f'Tux é instância de Aquático? {isinstance(tux, Aquatico)}')    # True
+print(f'Tux é instância de Terrestre? {isinstance(tux, Terreste)}')    # True
+print(f'Tux é instância de Animal? {isinstance(tux, Animal)}')    # True
+print(f'Tux é instância de object? {isinstance(tux, object)}')    # True
