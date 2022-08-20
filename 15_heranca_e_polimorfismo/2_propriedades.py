@@ -28,6 +28,30 @@ class Conta:
         self.__saldo -= valor
         destino.__saldo += valor
 
+    def get_numero(self):
+        return self.__numero
+
+    def set_numero(self, numero):
+        self.__numero = numero
+
+    def get_titular(self):
+        return self.__titular
+
+    def set_titular(self, titular):
+        self.__titular = titular
+
+    def get_saldo(self):
+        return self.__saldo
+
+    def set_saldo(self, saldo):
+        self.__saldo = saldo
+
+    def get_limite(self):
+        return self.__limite
+
+    def set_limite(self, limite):
+        self.__limite = limite
+
 
 conta1 = Conta('Felicity', 3000, 5000)
 conta2 = Conta('Angelina', 2000, 4000)
