@@ -1,7 +1,7 @@
 import unittest
 
 
-from atividades import comer, dormir
+from atividades import comer, dormir, e_engracada
 
 
 class AtividadesTestes(unittest.TestCase):
@@ -33,6 +33,12 @@ class AtividadesTestes(unittest.TestCase):
             dormir(10),
             'Puts, dormi muito... Estou atrasado para o trabalho.'
         )
+
+    def test_e_engracada(self):
+        """Testando se a pessoa é engraçada"""
+        self.assertEqual(e_engracada('Sérgio Malandro'), False)
+        self.assertFalse(e_engracada('Sérgio Malandro'))
+        self.assertTrue(e_engracada('Jim Carrey'), 'jim Carrey deveria ser engraçado')
 
 
 if __name__ == '__main__':
