@@ -1,0 +1,2 @@
+single thread apesar de ser menos eficiente, é mais a mais leve opção entre multi thread e multi processing.
+significa que as outras opções, a custo de eficiência demandam memória, oq as torna mais pesadas.
