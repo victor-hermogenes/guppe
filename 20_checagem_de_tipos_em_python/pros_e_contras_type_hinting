@@ -1,0 +1,11 @@
+Pros:
+1º - Facilita encontrar erros antes de executar o código;
+2º - Melhora documentação do código;
+3º - Melhora a funcionalidade das IDEs;
+
+Contras:
+1º - Leva tempo para se acostumar
+2º - Só a partir do 3.7 ficou completo
+3º - Uso dos type hintings deixa a performance mais lenta
+
+A necessidade de deixar o software mais robusto, pode valer a pena aumentar o peso.
