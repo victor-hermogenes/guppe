@@ -1,7 +1,8 @@
 import random
-from typing import Dict, List, Tuple, Set
+from typing import Dict, List, Tuple
 
 # https://www.alt-codes.net/suit-cards.php
+
 NAIPES = '♠ ♥ ♣ ♦'.split()
 CARTAS = '2 3 4 5 6 7 8 9 10 J Q K A'.split()
 
