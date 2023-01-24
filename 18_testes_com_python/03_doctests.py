@@ -93,7 +93,7 @@ Test passed.
 
 # Erro inesperado...
 
-Obs: Dentro do doctest, o Python não reconehce string com aspas duplas. Precisa ser aspas simples.
+Obs.txt: Dentro do doctest, o Python não reconehce string com aspas duplas. Precisa ser aspas simples.
 
 Certo:
 def fala_oi():
