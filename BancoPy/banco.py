@@ -78,6 +78,9 @@ def efetuar_saque() -> None:
         else:
             print(f'Não foi encontrada a conta com o número {numero}')
 
+        sleep(1)
+        menu()
+
     else:
         print('Ainda não existem contas cadastradas.')
         sleep(2)
@@ -91,11 +94,13 @@ def efetuar_deposito() -> None:
         conta: Conta = buscar_conta_por_numero(numero)
 
         if conta:
-            valor: float = float(input('Informe o valor do depósiuto: '))
+            valor: float = float(input('Informe o valor do depósito: '))
             conta.depositar(valor)
 
         else:
             print(f'Não foi encontrada conta com número {numero}')
+        sleep(1)
+        menu()
 
     else:
         print('Ainda não existem contas cadastradas.')
@@ -118,9 +123,13 @@ def efetuar_transferencia() -> None:
 
             else:
                 print(f'A conta destino com o número {destinatario} não foi encontrada.')
+            sleep(1)
+            menu()
 
         else:
             print(f'A sua conta com o número {remetente} não foi enccontrada.')
+            sleep(1)
+            menu()
 
     else:
         print('Ainda não existem contas cadastradas.')
@@ -136,6 +145,7 @@ def listar_contas() -> None:
             print(conta)
             print('-----------------')
             sleep(1)
+        menu()
     else:
         print('Ainda não existem contas cadastradas.')
         sleep(2)
