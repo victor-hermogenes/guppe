@@ -81,7 +81,7 @@ class Calcular:
             certo = True
         else:
             print('Resposta errada!')
-        print(f'{self.valor1} {self._op_simboolo} {self.valor2} = {self.resultado}')
+        print(f'{self.valor1} {self._op_simbolo} {self.valor2} = {self.resultado}')
         return certo
 
     def mostrar_operacao(self: object) -> None:
