@@ -102,6 +102,7 @@ def comprar_produto() -> None:
                         tem_no_carrinho = True
                         sleep(2)
                         menu()
+
                 if not tem_no_carrinho:
                     prod = {produto: 1}
                     carrinho.append(prod)
@@ -135,6 +136,7 @@ def visualizar_carrinho() -> None:
                 print('-----------------------')
                 sleep(1)
         menu()
+
     else:
         print('Ainda não existem produtos no carrinho')
         sleep(2)
