@@ -36,7 +36,7 @@ class Conta:
         self.__saldo = valor
 
     @property
-    def limite(self:object) -> float:
+    def limite(self: object) -> float:
         return self.__limite
 
     @limite.setter
@@ -48,7 +48,7 @@ class Conta:
         return self.__saldo_total
 
     @saldo_total.setter
-    def salto_total(self: object, valor: float) -> None:
+    def saldo_total(self: object, valor: float) -> None:
         self.__saldo_total = valor
 
     @property
@@ -66,13 +66,14 @@ class Conta:
     def sacar(self: object, valor: float) -> None:
         if 0 < valor <= self.saldo_total:
             if self.saldo >= valor:
-                self.saldo = self.saldo = valor
+                self.saldo = self.saldo - valor
                 self.saldo_total = self._calcula_saldo_total
             else:
                 restante: float = self.saldo - valor
-                self.limite = self.limite + restante
                 self.saldo = 0
+                self.limite = self.limite + restante
                 self.saldo_total = self._calcula_saldo_total
+            print('Saque efetuado com sucesso!')
         else:
             print('Saque não realizado, tente novamente.')
 
@@ -81,13 +82,15 @@ class Conta:
             if self.saldo >= valor:
                 self.saldo = self.saldo - valor
                 self.saldo_total = self._calcula_saldo_total
+                destino.saldo = destino.saldo + valor
                 destino.saldo_total = destino._calcula_saldo_total
             else:
                 restante: float = self.saldo - valor
                 self.saldo = 0
                 self.limite = self.limite + restante
                 self.saldo_total = self._calcula_saldo_total
+                destino.saldo = destino.saldo + valor
                 self.saldo_total = destino._calcula_saldo_total
-                print('Transferência relaziada com sucesso.')
+            print('Transferência relaziada com sucesso.')
         else:
             print('Transferência não realizada, tente novamente.')
