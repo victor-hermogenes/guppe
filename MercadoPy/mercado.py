@@ -134,7 +134,7 @@ def visualizar_carrinho() -> None:
                 print(f'Quantidade: {dados[1]}')
                 print('-----------------------')
                 sleep(1)
-
+        menu()
     else:
         print('Ainda não existem produtos no carrinho')
         sleep(2)
