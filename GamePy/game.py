@@ -25,7 +25,7 @@ def jogar(pontos: int) -> None:
     if continuar:
         jogar(pontos)
     else:
-        print(f'Você finalizou cp, {pontos} ponto(s).')
+        print(f'Você finalizou com {pontos} ponto(s).')
         print('Até a próxima')
 
 
