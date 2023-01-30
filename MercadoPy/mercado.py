@@ -73,9 +73,10 @@ def listar_produtos() -> None:
             print(produto)
             print('==================')
             sleep(1)
-    else: print(f'Ainda não existem prdoutos cadastrados.')
-    sleep(2)
-    menu()
+    else:
+        print(f'Ainda não existem prdoutos cadastrados.')
+        sleep(2)
+        menu()
 
 
 def comprar_produto() -> None:
